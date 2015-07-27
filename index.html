@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="venik@venik.org">
+
+    <title>Ivča&Veník SVATBA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-glass"></i> <span class="light">Ivča&Veník</span> Svatba <span id="debug"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#informace"><i class="fa fa-info"></i> Informace</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#misto"><i class="fa fa-location-arrow"></i> Místo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#program"><i class="fa fa-bars"></i> Program</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#dary"><i class="fa fa-gift"></i> Dary</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#dotazy"><i class="fa fa-question"></i> Dotazy</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">19.9.2015</h1>
+                        <p class="intro-text">Hotel Santander, Brno</p>
+                        <a href="#informace" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                        <p id="countdown"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Informace Section -->
+    <section id="informace" class="container content-section text-justify">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="text-center">Co potřebujete vědět</h2>
+                <p>
+                    Obřad se bude konat venku za každého počasí. V případě nepříznivé předpovědi si nezapomeňte vzít deštník a teplé spodní prádlo. Odpoledne můžeme zůstat venku na zahradě nebo se přesunout dovnitř, kde bude i večerní program.
+                </p>
+
+                <p>
+                    K prvnímu jídlu společně zasedneme nejdříve v 16:00. Obřad, utírání slz, gratulace a hromadné focení nějaký čas zaberou. Vezměte to prosím v úvahu ať už velkou snídaní nebo obědem, možnosti občerstvení v nejbližším okolí nejsou ideální. Navíc je velmi pravděpodobné, že se bude pít alkohol <i class="fa fa-smile-o"></i>
+                </p>
+
+                <p>
+                    Na oslavě vás rádi uvidíme ve slavnostním oblečení. Program prosím ponechte v naší režii. Určitě se budeme dobře bavit i bez svatebních her nebo únosu nevěsty.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misto Section -->
+    <section id="misto" class="container content-section text-justify">
+        <!-- <div class="download-section"> -->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="text-center">Kde se potkáme</h2>
+                <p>
+                    Obřad i následná oslava se odehraje v hotelu Santander v Brně Pisárkách.</br>
+                </p>
+
+                <p>
+                    Pro hosty přijíždějící zdaleka je zajištěno ubytování se snídaní v hotelu Santander a v blízkém penzionu Jupiter (4 minuty pěšky).
+                </p>
+
+                <p>
+                    Ubytovat se můžete od 12:00. Kde kdo bude bydlet se včas dozvíte.
+                </p>
+
+                <div id="map"></div>
+
+                <p>
+                    <a href="https://www.google.cz/maps/place/Hotel+Santander/@49.1922789,16.5638301,17z" target="_blank">Navigovat</a></br>
+                    </br>
+
+                    <a href="http://www.hotelsantander.cz/" target="_blank">Hotel Santander</a>, Pisárecká 296/6, Brno</br>
+                    <a href="http://www.penzionjupiter.cz/" target="_blank">Penzion Jupiter</a>, Veslařská 329/205, Brno
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="container content-section text-justify">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="text-center">Co se bude dít</h2>
+                <div class="row program">
+                    <div class="col-xs-5 text-right">13:30</div>
+                    <div class="col-xs-7 text-left"><i class="fa fa-car fa-2x"></i>Příjezd</div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-5 text-right">14:00</div>
+                    <div class="col-xs-7 text-left"><i class="fa fa-heart fa-2x"></i>Obřad</div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-5 text-right">14:30</div>
+                    <div class="col-xs-7 text-left"><i class="fa fa-glass fa-2x"></i>Přípitek</div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-5 text-right">15:00</div>
+                    <div class="col-xs-7 text-left"><i class="fa fa-camera fa-2x"></i>Focení</div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-5 text-right">16:00</div>
+                    <div class="col-xs-7 text-left"><i class="fa fa-cutlery fa-2x"></i>Raut</div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-users fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-beer fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-music fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-glass fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-smile-o fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-music fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-star fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-beer fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-beer fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="row program">
+                    <div class="col-xs-7 col-xs-offset-5 text-left">
+                        <i class="fa fa-bed fa-2x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dary Section -->
+    <section id="dary" class="container content-section text-justify">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="text-center">Čím potěšit novomanžele</h2>
+                <p>
+                    Nejvíce nás potěší, když to spolu pořádně oslavíme. Pokud nás přeci jen chcete obdarovat, oceníme příspěvek na svatební cestu. Jako důkaz toho, že dary nezpronevěříme, vám pošleme pohled. Uvidíme jestli to bude z Prýglu nebo z Thajska <i class="fa fa-smile-o"></i></p>
+                <p class="text-center">
+                    <button type="button" class="btn btn-success" id="contact-show" data-toggle="modal" data-target="#modal-contact">Chci dostat pohled</button>
+                </p>
+
+                <h5 class="text-right">Děkujeme</h5>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="modal fade" id="modal-contact">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2>Kam máme poslat pohled?</h2>
+                    </div>
+
+                    <form role="form" action="#" id="contact-form">
+                        <div class="modal-body">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Jméno" id="contact_name" name="contact_name" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon2"><i class="fa fa-home"></i></span>
+                                <input type="text" class="form-control" placeholder="Ulice" id="contact_street" name="contact_street" aria-describedby="basic-addon2">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3"><i class="fa fa-home"></i></span>
+                                <input type="text" class="form-control" placeholder="Město" id="contact_city" name="contact_city" aria-describedby="basic-addon3">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon4"><i class="fa fa-home"></i></span>
+                                <input type="text" class="form-control" placeholder="PSČ" id="contact_psc" name="contact_psc" aria-describedby="basic-addon4">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon5"><i class="fa fa-envelope-o"></i></span>
+                                <input type="text" class="form-control" placeholder="email" id="contact_email" name="contact_email" aria-describedby="basic-addon5">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!--<a href="#" class="btn btn-default" data-dismiss="modal">Zavrit</a>-->
+                            <button type="submit" id="contact_submit" class="btn btn-success">Uložit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="modal-success">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>Máme to</h4>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <p>Už teď se můžeš tešit <i class="fa fa-smile-o"></i></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-success" data-dismiss="modal">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dotazy Section -->
+    <section id="dotazy" class="container content-section text-justify">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="text-center">Stále je něco nejasné?</h2>
+                <p>
+                    Není nic jednoduššího než se ozvat <a href="mailto:ivies@centrum.cz">nevěstě</a> nebo <a href="mailto:venik@venik.org">ženichovi</a>. Telefon na nás určitě máte <i class="fa fa-smile-o"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="foto" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                        <li data-target="#myCarousel" data-slide-to="8"></li>
+                        <li data-target="#myCarousel" data-slide-to="9"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/c01.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c02.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c03.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c04.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c05.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c06.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c07.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c08.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c09.jpg" alt="Save The Date">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/c10.jpg" alt="Save The Date">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h1>Už se na vás těšíme  <i class="fa fa-smile-o"></i></h1>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkW09JslOI_vUFcA2aPgy12833YNbeEw8&sensor=false" type="text/javascript"></script>
+
+    <!-- jQuery count down plugin -->
+    <script src="js/jquery.countdown.js"></script>
+
+    <!-- jQuery Validation Plugin -->
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+
+</body>
+
+</html>
