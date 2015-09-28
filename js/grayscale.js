@@ -51,8 +51,50 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(function() {
-    $('#countdown').countdown({
-        date: "Sep 19, 2015 14:00:00"
+    $('#countdown').countdown("2015/09/19 14:00:00", {elapse: true})
+    .on('update.countdown', function(event) {
+        var $this = $(this);
+        var format;
+
+        if (event.elapsed)
+            format = 'Už jsme spolu ';
+        else
+            format = 'Zbývá ';
+
+        /* Years */
+        if (event.offset.years > 4)
+            format += '%-Y let ';
+        else if (event.offset.years > 1)
+            format += '%-Y roky ';
+        else if (event.offset.years > 0)
+            format += '%-Y rok ';
+
+        var months = event.offset.months - event.offset.years*12;
+        /* Months */
+        if (months > 4)
+            format += months + ' měsíců ';
+        else if (months > 1)
+            format += months + ' měsíce ';
+        else if (months > 0)
+            format += months + ' měsíc ';
+
+        /* Days */
+        if (event.offset.daysToMonth > 4)
+            format += '%-n dní ';
+        else if (event.offset.daysToMonth > 1)
+            format += '%-n dni ';
+        else if (event.offset.daysToMonth > 0)
+            format += '%-n den ';
+
+        /* Hours */
+        if (event.offset.hours > 4)
+            format += '%-H hodin ';
+        else if (event.offset.hours > 1)
+            format += '%-H hodiny ';
+        else if (event.offset.hours > 0)
+            format += '%-H hodina ';
+
+        $this.html(event.strftime(format));
     });
 });
 
@@ -139,7 +181,7 @@ function googleMapsInit() {
         zoom: 16,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(49.1920633, 16.5622809), 
+        center: new google.maps.LatLng(49.1920633, 16.5622809),
 
         // Disables the default Google Maps UI components
         //disableDefaultUI: true,
