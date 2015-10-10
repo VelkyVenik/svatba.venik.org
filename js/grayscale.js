@@ -57,7 +57,7 @@ $(function() {
         var format;
 
         if (event.elapsed)
-            format = 'Už jsme spolu ';
+            format = 'Už jsme manželé ';
         else
             format = 'Zbývá ';
 
