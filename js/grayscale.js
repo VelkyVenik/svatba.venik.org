@@ -57,7 +57,7 @@ $(function() {
         var format;
 
         if (event.elapsed)
-            format = 'Už jsme manželé ';
+            format = 'Jsme manželé už ';
         else
             format = 'Zbývá ';
 
@@ -82,7 +82,7 @@ $(function() {
         if (event.offset.daysToMonth > 4)
             format += '%-n dní ';
         else if (event.offset.daysToMonth > 1)
-            format += '%-n dni ';
+            format += '%-n dny ';
         else if (event.offset.daysToMonth > 0)
             format += '%-n den ';
 
