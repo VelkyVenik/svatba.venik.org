@@ -61,15 +61,18 @@ $(function() {
         else
             format = 'Zbývá ';
 
-        /* Years */
-        if (event.offset.years > 4)
-            format += '%-Y let ';
-        else if (event.offset.years > 1)
-            format += '%-Y roky ';
-        else if (event.offset.years > 0)
-            format += '%-Y rok ';
+        console.log(event.offset);
 
-        var months = event.offset.months - event.offset.years*12;
+        /* Years */
+        var years = Math.floor(event.offset.months / 12);
+        if (years > 4)
+            format += years + ' let ';
+        else if (years > 1)
+            format += years + ' roky ';
+        else if (years > 0)
+            format += years + ' rok ';
+
+        var months = event.offset.months - years*12;
         /* Months */
         if (months > 4)
             format += months + ' měsíců ';
